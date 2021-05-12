@@ -3,6 +3,7 @@
   top: 35px;
   left: 25%;
   width: 100vw;
+  z-index: 1;
 }
 
 .search > h2 {
@@ -34,7 +35,7 @@
 .search > button {
   position: absolute;
   left: 0;
-  top: 480px;
+  top: 460px;
   text-transform: inherit !important;
   background-color: #ff7779;
   color: white;
@@ -44,4 +45,51 @@
 .search > button:hover {
   background-color: white;
   color: #ff7779;
+}
+
+@media only screen and (max-width: 800px) {
+  .search {
+    left: 0;
+  }
+  .header-center > input {
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rdrDefinedRangesWrapper {
+    display: none;
+  }
+  .rdrDateRangePickerWrapper,
+  .rdrCalendarWrapper,
+  .rdrMonth {
+    width: 100% !important;
+  }
+  .search,
+  .search > h2,
+  .search > input,
+  .search > button {
+    width: 100%;
+  }
+  .home-section {
+    flex-direction: column;
+  }
+  .header-right > p,
+  .header-right > .MuiSvgIcon-root {
+    display: none;
+  }
+  .header-right {
+    width: unset;
+    margin-right: 20px;
+  }
+
+  .header-logo {
+    width: 80px;
+    margin-right: 0;
+  }
+
+  .MuiAvatar-root {
+    width: 35px;
+    height: 35px;
+  }
 }
