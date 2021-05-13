@@ -47,12 +47,15 @@
   color: #ff7779;
 }
 
+@media only screen and (max-width: 1050px) {
+  .header-center > input {
+    width: 30vw;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .search {
     left: 0;
-  }
-  .header-center > input {
-    width: 30vw;
   }
 }
 
@@ -71,21 +74,10 @@
   .search > button {
     width: 100%;
   }
-  .home-section {
-    flex-direction: column;
-  }
+
   .header-right > p,
   .header-right > .MuiSvgIcon-root {
     display: none;
-  }
-  .header-right {
-    width: unset;
-    margin-right: 20px;
-  }
-
-  .header-logo {
-    width: 80px;
-    margin-right: 0;
   }
 
   .MuiAvatar-root {
